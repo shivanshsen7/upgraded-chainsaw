@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Fight online abuse
+{% endblock %}
+
+{% block body %}
+
+<div class = "content">
+    <h1>Fight online abuse</h1>
+    {% if tasks|length < 1 %}
+    <h4>There are No Comments, Check one Below! </h4>
+
+    {% else %}
+
+    <table>
+        <tr>
+            <th>Comment</th>
+            <th>Added</th>
+            <th>Abusive</th>
+            <th>Abusive Category</th>
+            <th>Actions</th>
+        </tr>
+        {% for task in tasks %}
+            <tr>
+                <td>{{ task.comment}}</td>
+                <td>{{ task.date_created.date()}}</td>
+                <td>{{ task.abuse}}</td>
+                <td>{{ task.abuse_category}}</td>
+            <td>
+                <a href="del/{{ task.id }}">Delete</a>
+                <br>
+                <a href="/mod/{{ task.id }}">Update</a>
+            </td>
+
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif%}
+<br>
+<br>
+    <form action="/" method="post" style="text-align: center;">
+    <input type="text" name="comment" id="comment">
+    <br><br>
+    <input type="submit" value="Add Comment">
+    </form>
+</div>
+{% endblock %}
