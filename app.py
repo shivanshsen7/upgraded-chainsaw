@@ -59,7 +59,7 @@ def modify_task(id):
         mod_comment.comment = request.form["comment"]
         temp_comments_details = aCheck(mod_comment.comment)
         mod_comment.abuse = temp_comments_details[0]
-        mod_comment.abuse_category = temp_comments_details[1]
+        mod_comment.abuse_category = str(temp_comments_details[1])
         try:
             db.session.commit()
             return redirect('/')
