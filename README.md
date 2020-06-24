@@ -18,5 +18,7 @@ Use this command to install all the requirements
 <br>
 Use this command to run server `$ python app.py`
 <br>
+
+#### To serve at production deployment. Use command `$ gunicorn --bind 0.0.0.0:5000 app:app`
 ### <b> Project sourced from [Kaggle](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)</b>
 ### Project By : [Akshat jain](https://github.com/AkshatJain20) & [Shivansh Sen](https://github.com/shivanshsen7)
