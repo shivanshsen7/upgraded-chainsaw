@@ -18,5 +18,5 @@ Use this command to install all the requirements
 <br>
 Use this command to run server `$ python app.py`
 <br>
-<b> Project sourced from [Kaggle](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)</b>
+### <b> Project sourced from [Kaggle](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)</b>
 ### Project By : [Akshat jain](https://github.com/AkshatJain20) & [Shivansh Sen](https://github.com/shivanshsen7)
