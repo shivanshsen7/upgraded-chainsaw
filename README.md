@@ -2,6 +2,7 @@
 Clone repository `$ git clone https://github.com/shivanshsen7/upgraded-chainsaw.git`
 <br>
 move into in `$ cd upgraded-chainsaw`
+<br>
 Use this command to acticate environment `$ source env/bin/activate`
 <br>
 #### If there is a python2 version installed 
