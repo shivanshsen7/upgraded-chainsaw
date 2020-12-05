@@ -15,7 +15,7 @@ def abusiveCheck(str1):
     jb1 = joblib.load("job_model")
     
     
-    # str1 = "Motherfucker"
+    
     punctuation_edit = string.punctuation.replace('\'','') +"0123456789"
     outtab = "                                         "
     trantab = str.maketrans(punctuation_edit, outtab)
